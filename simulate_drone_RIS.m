@@ -1,6 +1,6 @@
 function simulate_drone_RIS()
     clc;
-    num_tx = 1; % 1RIS | 3RIS | 5RIS | 7RIS
+    num_tx = 5; % 1RIS | 3RIS | 5RIS | 7RIS
     track_type = 4; % 1-linear | 2-zig_zag | 3-random | 4-same_random
     % speed_values = [0.05, 0.02, 0.01, 0.005]; % 10000, 25000, 50000, 100000
     speed_values = [0.005, 1]; 
@@ -255,6 +255,7 @@ function new_track = generate_same_random_track(name, track_length, orientation,
 
     nomeUtente = getenv('USERNAME');
     load(['C:\Users\' nomeUtente '\Desktop\dataset\random_positions\Random_positions.mat'], 'positions');
+    % load(['/Users/' nomeUtente '/Desktop/dataset/random_positions/Random_positions.mat'], 'positions');
     new_track.positions = positions;
     new_track.no_snapshots = size(positions, 2);
 
