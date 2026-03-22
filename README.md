@@ -53,7 +53,7 @@ Before running the project, ensure you have:
    ```bash
    git clone https://github.com/your-username/simulate_drone.git
    cd simulate_drone
-````
+```
 
 2. Install and add **QuaDRiGa** to your MATLAB path:
 
